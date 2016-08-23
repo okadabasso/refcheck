@@ -118,7 +118,7 @@ namespace refcheck
                 {
                     continue;
                 }
-                if (path.Contains("/" + reference.ProjectName + "/"))
+                if (path.Contains(reference.ProjectName + "/"))
                 {
                     Console.Write(new string('\t', depth + 1));
                     Console.WriteLine("* {0} __circular reference__", reference.ProjectName);
